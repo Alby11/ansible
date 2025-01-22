@@ -1,0 +1,1 @@
+---\n- name: Sample task\n  debug:\n    msg: 'Hello World'

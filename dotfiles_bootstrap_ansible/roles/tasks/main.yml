@@ -1,0 +1,63 @@
+- name: Copy dnf.conf to /etc/dnf/dnf.conf
+  copy:
+    src: etc/dnf/dnf.conf
+    dest: /etc/dnf/dnf.conf
+    owner: root
+    group: root
+    mode: "0644"
+  become: yes
+
+- name: Copy keyd configuration
+  copy:
+    src: etc/keyd/default.conf
+    dest: /etc/keyd/default.conf
+    owner: root
+    group: root
+    mode: "0644"
+  become: yes
+
+- name: Copy modprobe blacklist configuration
+  copy:
+    src: etc/modprobe.d/blacklist.conf
+    dest: /etc/modprobe.d/blacklist.conf
+    owner: root
+    group: root
+    mode: "0644"
+  become: yes
+
+- name: Copy modules-load configuration
+  copy:
+    src: etc/modules-load.d/overlay.conf
+    dest: /etc/modules-load.d/overlay.conf
+    owner: root
+    group: root
+    mode: "0644"
+  become: yes
+
+- name: Copy sudoers file
+  copy:
+    src: etc/sudoers
+    dest: /etc/sudoers
+    owner: root
+    group: root
+    mode: "0440"
+  become: yes
+  validate: visudo -cf %s
+
+- name: Copy systemd logind configuration
+  copy:
+    src: etc/systemd/logind.conf
+    dest: /etc/systemd/logind.conf
+    owner: root
+    group: root
+    mode: "0644"
+  become: yes
+
+- name: Copy vbox-modules-sign-secureboot.service
+  copy:
+    src: usr/lib/systemd/system/vbox-modules-sign-secureboot.service
+    dest: /usr/lib/systemd/system/vbox-modules-sign-secureboot.service
+    owner: root
+    group: root
+    mode: "0644"
+  become: yes

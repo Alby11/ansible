@@ -1,0 +1,7 @@
+tmp/
+*.war
+1
+""/
+\"\$ANSIBLE_HOME\"/
+
+*work*

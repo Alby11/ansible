@@ -1,0 +1,12 @@
+[Unit]
+Description=Sign VirtualBox Modules
+After=network.target
+Before=vboxdrv.service
+
+[Service]
+Type=oneshot
+ExecStart=/root/.MOK/vbox-modules-sign-secureboot.sh 
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,86 @@
+- name: Detect the package manager
+  debug:
+    msg: "Detected package manager: {{ ansible_facts['pkg_mgr'] }}"
+
+- name: Install packages on Ubuntu/Debian
+  apt:
+    name:
+      - curl
+      - git
+      - fzf
+      - gh
+      - navi
+      - zoxide
+      - awscli
+      - bat
+      - fd-find
+      - ripgrep
+      - zsh
+      - build-essential
+      - make
+      - gcc
+      - g++
+      - cmake
+      - libssl-dev
+      - zlib1g-dev
+      - libbz2-dev
+      - libreadline-dev
+      - libsqlite3-dev
+      - libncurses5-dev
+      - libffi-dev
+      - liblzma-dev
+      - libfreetype6-dev
+      - libasound2-dev
+      - libexpat1-dev
+      - libxcb-composite0-dev
+      - libfontconfig1-dev
+      - libxcursor-dev
+      - libgtk-4-dev
+      - pkg-config
+      - ccache
+      - golang-go
+    state: present
+    update_cache: yes
+  when: ansible_facts['pkg_mgr'] == "apt"
+
+- name: Install packages on Fedora/RHEL
+  dnf:
+    name:
+      - curl
+      - git
+      - fzf
+      - gh
+      - navi
+      - zoxide
+      - awscli
+      - bat
+      - fd-find
+      - ripgrep
+      - zsh
+      - gcc
+      - gcc-c++
+      - make
+      - cmake
+      - openssl-devel
+      - zlib-devel
+      - bzip2
+      - bzip2-devel
+      - readline-devel
+      - sqlite
+      - sqlite-devel
+      - ncurses-devel
+      - tk-devel
+      - libffi-devel
+      - xz-devel
+      - fontconfig-devel
+      - freetype-devel
+      - libX11-devel
+      - libstdc++-devel
+      - atk-devel
+      - glib2-devel
+      - pango-devel
+      - gtk4-devel
+      - ccache
+      - golang
+    state: present
+  when: ansible_facts['pkg_mgr'] == "dnf"

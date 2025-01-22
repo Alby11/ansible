@@ -1,0 +1,21 @@
+- name: Ensure the user exists
+  user:
+    name: "{{ bootstrap_user }}"
+    state: present
+    shell: /bin/bash
+
+- name: Create user's home directory if missing
+  file:
+    path: "/home/{{ bootstrap_user }}"
+    state: directory
+    owner: "{{ bootstrap_user }}"
+    group: "{{ bootstrap_user }}"
+    mode: "0755"
+
+- name: Add user to sudoers with NOPASSWD
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: "^{{ bootstrap_user }}"
+    line: "{{ bootstrap_user }} ALL=(ALL) NOPASSWD:ALL"
+    validate: visudo -cf %s

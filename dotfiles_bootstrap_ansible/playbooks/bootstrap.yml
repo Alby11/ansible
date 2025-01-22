@@ -1,0 +1,20 @@
+---
+- name: Bootstrap a new system
+  hosts: localhost
+  become: yes
+  vars_prompt:
+    - name: "bootstrap_user"
+      prompt: "Enter the username to configure"
+      private: no # The input will be visible
+    - name: "ansible_become_password"
+      prompt: "Enter the sudo password"
+      private: yes
+
+  tasks:
+    - name: Ensure the user exists
+      include_role:
+        name: user_setup
+
+    - name: Install essential packages
+      include_role:
+        name: package_manager

@@ -1,0 +1,46 @@
+# NOTE: to use this, rename this file to default.conf and put in /etc/keyd/
+
+[ids]
+*
+
+[main]
+
+# Toggle caps lock when both shift keys are pressed
+leftshift+rightshift = capslock
+
+# Caps Lock acts as Control when held and Escape when tapped
+capslock = overload(control, esc)
+
+# Spacebar acts as space when tapped and activates 'fn_layer' when held
+space = overload(fn_layer, space)
+
+[fn_layer]
+# Remap h, j, k, l to arrow keys
+h = left
+j = down
+k = up
+l = right
+
+# Remap U, M, I, and comma to navigation keys
+u = home
+m = end
+i = pageup
+comma = pagedown
+d = delete
+p = print
+
+# Map number keys and symbols to function keys
+esc = grave
+shift+esc = shift+grave
+1 = f1
+2 = f2
+3 = f3
+4 = f4
+5 = f5
+6 = f6
+7 = f7
+8 = f8
+9 = f9
+0 = f10
+minus = f11
+equal = f12
