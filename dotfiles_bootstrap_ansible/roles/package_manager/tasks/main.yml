@@ -5,40 +5,43 @@
 - name: Install packages on Ubuntu/Debian
   apt:
     name:
-      - curl
-      - git
-      - fzf
-      - gh
-      - navi
-      - zoxide
       - awscli
       - bat
-      - fd-find
-      - ripgrep
-      - zsh
       - build-essential
-      - make
-      - gcc
-      - g++
+      - ccache
       - cmake
-      - libssl-dev
-      - zlib1g-dev
+      - curl
+      - fd-find
+      - fzf
+      - g++
+      - gcc
+      - gh
+      - git
+      - golang-go
+      - libasound2-dev
       - libbz2-dev
+      - libexpat1-dev
+      - libffi-dev
+      - libfontconfig1-dev
+      - libfreetype6-dev
+      - libgtk-4-dev
+      - liblzma-dev
+      - libncurses5-dev
       - libreadline-dev
       - libsqlite3-dev
-      - libncurses5-dev
-      - libffi-dev
-      - liblzma-dev
-      - libfreetype6-dev
-      - libasound2-dev
-      - libexpat1-dev
+      - libssl-dev
       - libxcb-composite0-dev
-      - libfontconfig1-dev
       - libxcursor-dev
-      - libgtk-4-dev
+      - make
+      - navi
       - pkg-config
-      - ccache
-      - golang-go
+      - ripgrep
+      - wl-clipboard
+      - xsel
+      - yq
+      - zlib1g-dev
+      - zoxide
+      - zsh
     state: present
     update_cache: yes
   when: ansible_facts['pkg_mgr'] == "apt"
@@ -46,41 +49,44 @@
 - name: Install packages on Fedora/RHEL
   dnf:
     name:
-      - curl
-      - git
-      - fzf
-      - gh
-      - navi
-      - zoxide
+      - atk-devel
       - awscli
       - bat
-      - fd-find
-      - ripgrep
-      - zsh
-      - gcc
-      - gcc-c++
-      - make
-      - cmake
-      - openssl-devel
-      - zlib-devel
       - bzip2
       - bzip2-devel
-      - readline-devel
-      - sqlite
-      - sqlite-devel
-      - ncurses-devel
-      - tk-devel
-      - libffi-devel
-      - xz-devel
+      - ccache
+      - cmake
+      - curl
+      - fd-find
       - fontconfig-devel
       - freetype-devel
-      - libX11-devel
-      - libstdc++-devel
-      - atk-devel
+      - fzf
+      - gcc
+      - gcc-c++
+      - gh
+      - git
       - glib2-devel
-      - pango-devel
-      - gtk4-devel
-      - ccache
       - golang
+      - gtk4-devel
+      - libX11-devel
+      - libffi-devel
+      - libstdc++-devel
+      - make
+      - navi
+      - ncurses-devel
+      - openssl-devel
+      - pango-devel
+      - readline-devel
+      - ripgrep
+      - sqlite
+      - sqlite-devel
+      - tk-devel
+      - wl-clipboard
+      - xsel
+      - xz-devel
+      - yq
+      - zlib-devel
+      - zoxide
+      - zsh
     state: present
   when: ansible_facts['pkg_mgr'] == "dnf"
