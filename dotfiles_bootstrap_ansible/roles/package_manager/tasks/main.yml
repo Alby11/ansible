@@ -32,6 +32,7 @@
       - libssl-dev
       - libxcb-composite0-dev
       - libxcursor-dev
+      - luarocks
       - make
       - navi
       - pkg-config
@@ -71,6 +72,7 @@
       - libX11-devel
       - libffi-devel
       - libstdc++-devel
+      - luarocks
       - make
       - navi
       - ncurses-devel
