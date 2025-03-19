@@ -1,0 +1,18 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for roles/nginx_setup
+- name: Restart NGINX
+  ansible.builtin.systemd:
+    name: nginx
+    state: restarted
+  listen: "restart nginx"
+
+- name: Check NGINX Status
+  ansible.builtin.command: systemctl status nginx
+  register: nginx_status
+  changed_when: false
+  ignore_errors: true
+
+- name: Show NGINX Status
+  ansible.builtin.debug:
+    msg: "{{ nginx_status.stdout_lines }}"

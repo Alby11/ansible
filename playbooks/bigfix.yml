@@ -1,0 +1,5 @@
+- name: Install BigFix Agent
+  hosts: all
+  become: yes
+  roles:
+    - besclient

@@ -1,0 +1,28 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/nginx_setup
+- name: Install NGINX (Debian)
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Install NGINX (RedHat)
+  ansible.builtin.yum:
+    name: nginx
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "RedHat"
+
+- name: Deploy NGINX Configuration
+  ansible.builtin.template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+  notify: Restart NGINX
+
+- name: Start and Enable NGINX
+  ansible.builtin.systemd:
+    name: nginx
+    state: started
+    enabled: yes

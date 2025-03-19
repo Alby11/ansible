@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for besclient
+- name: Restart BigFix Agent
+  ansible.builtin.systemd:
+    name: besclient
+    state: restarted

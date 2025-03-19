@@ -5,3 +5,14 @@
   ansible.builtin.systemd:
     name: activemq
     state: restarted
+  listen: "restart activemq"
+
+- name: Check ActiveMQ Status
+  ansible.builtin.command: systemctl status activemq
+  register: activemq_status
+  changed_when: false
+  ignore_errors: true
+
+- name: Show ActiveMQ Status
+  ansible.builtin.debug:
+    msg: "{{ activemq_status.stdout_lines }}"

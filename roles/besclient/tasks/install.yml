@@ -1,0 +1,22 @@
+- name: Install BigFix Agent (Debian)
+  ansible.builtin.apt:
+    deb: "https://software.bigfix.com/download/besagent/BESAgent-11.0.3.82-ubuntu18.amd64.deb"
+  when: ansible_os_family == "Debian"
+
+- name: Install BigFix Agent (RedHat)
+  ansible.builtin.yum:
+    name: "https://software.bigfix.com/download/besagent/BESAgent-11.0.3.82-rhe7.x86_64.rpm"
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Deploy BigFix Agent Configuration
+  ansible.builtin.template:
+    src: besclient.config.j2
+    dest: /var/opt/BESClient/besclient.config
+  notify: Restart BigFix Agent
+
+- name: Start and Enable BigFix Agent
+  ansible.builtin.systemd:
+    name: besclient
+    state: started
+    enabled: yes
