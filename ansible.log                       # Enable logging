@@ -1,0 +1,7 @@
+2025-03-19 16:02:51,725 p=2553457 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse /home/tallonea/.config/ansible/inventory/activemq_inventory.yml # Path to main inventory as an inventory
+source
+
+2025-03-19 16:02:51,726 p=2553457 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 16:02:51,729 p=2553457 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+

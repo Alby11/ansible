@@ -559,3 +559,10 @@ source
 
 2025-03-19 15:57:11,655 p=2508576 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
 
+2025-03-19 16:01:57,146 p=2547459 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse /home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to main inventory as an inventory
+source
+
+2025-03-19 16:01:57,146 p=2547459 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 16:01:57,148 p=2547459 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
