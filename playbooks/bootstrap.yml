@@ -1,0 +1,9 @@
+- name: Configure Passwordless Sudo for Ansible User
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure sudoers file allows passwordless sudo for Ansible user
+      ansible.builtin.copy:
+        dest: "/etc/sudoers.d/ansiadmin"
+        content: "ansiadmin ALL=(ALL) NOPASSWD:ALL"
+        mode: "0440"

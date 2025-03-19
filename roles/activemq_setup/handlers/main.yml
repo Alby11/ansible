@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for activemq_setup
+- name: Restart ActiveMQ
+  ansible.builtin.systemd:
+    name: activemq
+    state: restarted

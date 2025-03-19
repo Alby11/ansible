@@ -1,0 +1,17 @@
+- name: Deploy ActiveMQ to SVI
+  hosts: svi
+  become: true
+  roles:
+    - activemq_setup
+
+- name: Deploy ActiveMQ to QA
+  hosts: qa
+  become: true
+  roles:
+    - activemq_setup
+
+- name: Deploy ActiveMQ to PROD
+  hosts: prod
+  become: true
+  roles:
+    - activemq_setup

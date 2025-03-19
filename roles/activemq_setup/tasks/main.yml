@@ -1,0 +1,59 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for activemq_setup
+- name: Create activemq group
+  ansible.builtin.group:
+    name: activemq
+    state: present
+
+- name: Create activemq user
+  ansible.builtin.user:
+    name: activemq
+    group: activemq
+    home: /opt/activemq
+    shell: /bin/bash
+    system: true
+
+- name: Download ActiveMQ
+  ansible.builtin.get_url:
+    url: "https://downloads.apache.org/activemq/5.19.0/apache-activemq-5.19.0-bin.tar.gz"
+    dest: "/tmp/apache-activemq.tar.gz"
+  when: not ansible_check_mode
+
+- name: Extract ActiveMQ
+  ansible.builtin.unarchive:
+    src: "/tmp/apache-activemq.tar.gz"
+    dest: "/opt/"
+    remote_src: true
+  when: not ansible_check_mode
+
+- name: Set ownership and permissions
+  ansible.builtin.file:
+    path: "/opt/apache-activemq-5.19.0"
+    owner: activemq
+    group: activemq
+    mode: "0755"
+
+- name: Deploy ActiveMQ configuration
+  ansible.builtin.template:
+    src: activemq.xml.j2
+    dest: "/opt/activemq/conf/activemq.xml"
+    owner: activemq
+    group: activemq
+    mode: "0755"
+  notify: Restart ActiveMQ
+
+- name: Create ActiveMQ systemd service
+  ansible.builtin.template:
+    src: activemq.service.j2
+    dest: "/etc/systemd/system/activemq.service"
+    owner: root
+    group: root
+    mode: "0755"
+  notify: Restart ActiveMQ
+
+- name: Start and Enable ActiveMQ
+  ansible.builtin.systemd:
+    name: activemq
+    state: started
+    enabled: true

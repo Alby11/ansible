@@ -1,0 +1,561 @@
+2025-03-19 15:18:18,414 p=1850681 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse /home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to main inventory as an inventory
+source
+
+2025-03-19 15:18:18,414 p=1850681 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:18:18,416 p=1850681 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-19 15:18:41,485 p=1856300 u=tallonea n=ansible INFO| svi-server | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: no such identity: ./.ssh/id_rsa: No such file or directory\r\nansiadmin@20.91.255.221: Permission denied (publickey).",
+    "unreachable": true
+}
+2025-03-19 15:18:41,492 p=1856300 u=tallonea n=ansible INFO| qa-server | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: no such identity: ./.ssh/id_rsa: No such file or directory\r\nansiadmin@20.91.255.191: Permission denied (publickey).",
+    "unreachable": true
+}
+2025-03-19 15:18:41,558 p=1856300 u=tallonea n=ansible INFO| prod-server | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: no such identity: ./.ssh/id_rsa: No such file or directory\r\nansiadmin@20.91.255.71: Permission denied (publickey).",
+    "unreachable": true
+}
+2025-03-19 15:19:44,203 p=1874233 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:19:45,673 p=1874526 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:19:47,394 p=1875310 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:19:49,380 p=1876300 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:19:51,419 p=1876828 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:19:53,200 p=1877416 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:19:54,816 p=1877702 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:06,531 p=1881177 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:09,297 p=1883045 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:27,922 p=1889722 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:30,102 p=1890406 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:32,457 p=1890825 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:34,190 p=1892490 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:35,781 p=1892621 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:37,722 p=1893630 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:43,011 p=1896055 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:45,812 p=1896906 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:20:47,970 p=1898117 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:21:16,845 p=1904819 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:21:17,780 p=1905289 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:21:17,780 p=1905289 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:21:17,783 p=1905289 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:21:17,812 p=1905289 u=tallonea n=ansible ERROR| ERROR! Empty playbook, nothing to do: /home/tallonea/.config/ansible/playbooks/.null-ls_797944_activemq.yml
+2025-03-19 15:21:19,762 p=1906249 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:22:09,154 p=1919684 u=tallonea n=ansible INFO| - Role activemq_setup was created successfully
+2025-03-19 15:22:32,537 p=1926989 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:22:33,915 p=1927618 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:22:35,504 p=1927885 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:22:37,433 p=1928021 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:22:39,049 p=1929110 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:23:20,932 p=1942368 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:23:23,379 p=1943820 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:23:24,537 p=1943904 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:29:07,066 p=2050988 u=tallonea n=ansible INFO| prod-server | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+2025-03-19 15:29:10,295 p=2050988 u=tallonea n=ansible INFO| qa-server | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 20.91.255.191 port 22: Connection refused",
+    "unreachable": true
+}
+2025-03-19 15:29:13,058 p=2050988 u=tallonea n=ansible INFO| svi-server | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 20.91.255.221 port 22: Connection timed out",
+    "unreachable": true
+}
+2025-03-19 15:33:34,770 p=2132277 u=tallonea n=ansible INFO| Encryption successful
+2025-03-19 15:33:59,854 p=2142162 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:36:34,068 p=2179148 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:36:34,736 p=2179196 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:36:34,736 p=2179196 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:36:34,739 p=2179196 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:36:34,762 p=2179196 u=tallonea n=ansible ERROR| ERROR! Empty playbook, nothing to do: /home/tallonea/.config/ansible/playbooks/.null-ls_437956_bootstrap.yml
+2025-03-19 15:36:36,106 p=2180212 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:36:37,552 p=2181220 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:37:29,027 p=2191276 u=tallonea n=ansible INFO|  _____________________________________
+< PLAY [Bootstrap Ansible Admin User] >
+ -------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:37:29,032 p=2191276 u=tallonea n=ansible ERROR| ERROR! Attempting to decrypt but no vault secrets found
+2025-03-19 15:38:20,367 p=2203167 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:20,801 p=2203218 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:38:20,801 p=2203218 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:38:20,804 p=2203218 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:38:20,875 p=2203218 u=tallonea n=ansible INFO| playbook: playbooks/bootstrap.yml
+2025-03-19 15:38:21,123 p=2203498 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:38:21,123 p=2203498 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:38:21,126 p=2203498 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:38:21,210 p=2203498 u=tallonea n=ansible INFO| playbook: playbooks/.null-ls_675915_bootstrap.yml
+2025-03-19 15:38:21,662 p=2203663 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:38:22,015 p=2203741 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:38:23,436 p=2204592 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:26,876 p=2205473 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:28,129 p=2206056 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:38:28,129 p=2206056 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:38:28,133 p=2206056 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:38:28,222 p=2206056 u=tallonea n=ansible INFO| playbook: playbooks/.null-ls_504086_bootstrap.yml
+2025-03-19 15:38:28,917 p=2206105 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:38:30,405 p=2206203 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:32,036 p=2206296 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:34,303 p=2207538 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:36,196 p=2208668 u=tallonea n=ansible INFO| {"/home/tallonea/.ansible/collections/ansible_collections": {"ansible.posix": {"version": "2.0.0"}, "community.docker": {"version": "4.5.1"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "fc.linux": {"version": "1.0.0"}}}
+2025-03-19 15:38:39,324 p=2209051 u=tallonea n=ansible INFO|  _____________________________________________________
+< PLAY [Configure Passwordless Sudo for Ansible User] >
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:38:39,336 p=2209051 u=tallonea n=ansible ERROR| ERROR! Attempting to decrypt but no vault secrets found
+2025-03-19 15:38:45,817 p=2212471 u=tallonea n=ansible INFO|  _____________________________________________________
+< PLAY [Configure Passwordless Sudo for Ansible User] >
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:38:45,826 p=2212471 u=tallonea n=ansible ERROR| ERROR! Attempting to decrypt but no vault secrets found
+2025-03-19 15:39:30,561 p=2222796 u=tallonea n=ansible ERROR| ERROR! Attempting to decrypt but no vault secrets found
+2025-03-19 15:39:46,807 p=2226541 u=tallonea n=ansible INFO| prod-server | CHANGED | rc=0 >>
+root
+
+2025-03-19 15:39:47,147 p=2226541 u=tallonea n=ansible INFO| qa-server | CHANGED | rc=0 >>
+root
+
+2025-03-19 15:39:47,418 p=2226541 u=tallonea n=ansible INFO| svi-server | CHANGED | rc=0 >>
+root
+
+2025-03-19 15:40:07,006 p=2233005 u=tallonea n=ansible INFO|  _____________________________________________________
+< PLAY [Configure Passwordless Sudo for Ansible User] >
+ -----------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:40:07,039 p=2233005 u=tallonea n=ansible INFO|  ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:40:09,228 p=2233005 u=tallonea n=ansible INFO| ok: [svi-server]
+2025-03-19 15:40:09,701 p=2233005 u=tallonea n=ansible INFO| ok: [prod-server]
+2025-03-19 15:40:09,953 p=2233005 u=tallonea n=ansible INFO| ok: [qa-server]
+2025-03-19 15:40:09,986 p=2233005 u=tallonea n=ansible INFO|  ________________________________________________________
+/ TASK [Ensure sudoers file allows passwordless sudo for \
+\ Ansible user]                                          /
+ --------------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:40:12,712 p=2233005 u=tallonea n=ansible INFO| changed: [svi-server]
+2025-03-19 15:40:13,497 p=2233005 u=tallonea n=ansible INFO| changed: [prod-server]
+2025-03-19 15:40:14,245 p=2233005 u=tallonea n=ansible INFO| changed: [qa-server]
+2025-03-19 15:40:14,263 p=2233005 u=tallonea n=ansible INFO|  ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2025-03-19 15:40:14,263 p=2233005 u=tallonea n=ansible INFO| prod-server                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 15:40:14,263 p=2233005 u=tallonea n=ansible INFO| qa-server                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 15:40:14,264 p=2233005 u=tallonea n=ansible INFO| svi-server                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 15:40:24,418 p=2237603 u=tallonea n=ansible INFO| svi-server | CHANGED | rc=0 >>
+root
+
+2025-03-19 15:40:24,770 p=2237603 u=tallonea n=ansible INFO| prod-server | CHANGED | rc=0 >>
+root
+
+2025-03-19 15:40:25,008 p=2237603 u=tallonea n=ansible INFO| qa-server | CHANGED | rc=0 >>
+root
+
+2025-03-19 15:41:50,641 p=2262901 u=tallonea n=ansible ERROR| ERROR! the role 'activemq_setup' was not found in /home/tallonea/.config/ansible/playbooks/roles:/home/tallonea/.config/ansible/roles/                            # Path to roles directory:/home/tallonea/.config/ansible/playbooks
+
+The error appears to be in '/home/tallonea/.config/ansible/playbooks/activemq.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - activemq_setup
+      ^ here
+
+2025-03-19 15:42:10,691 p=2268448 u=tallonea n=ansible ERROR| ERROR! the role 'activemq_setup' was not found in /home/tallonea/.config/ansible/playbooks/roles:/home/tallonea/.config/ansible/roles/                            # Path to roles directory:/home/tallonea/.config/ansible/playbooks
+
+The error appears to be in '/home/tallonea/.config/ansible/playbooks/activemq.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - activemq_setup
+      ^ here
+
+2025-03-19 15:48:03,567 p=2343768 u=tallonea n=ansible ERROR| ERROR! the role 'activemq_setup' was not found in /home/tallonea/.config/ansible/playbooks/roles:/home/tallonea/.config/ansible/roles                            # Path to roles directory:/home/tallonea/.config/ansible/playbooks
+
+The error appears to be in '/home/tallonea/.config/ansible/playbooks/activemq.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - activemq_setup
+      ^ here
+
+2025-03-19 15:49:16,797 p=2364037 u=tallonea n=ansible INFO| {}
+2025-03-19 15:49:17,320 p=2364060 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:17,321 p=2364060 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:17,324 p=2364060 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:49:17,460 p=2364060 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: svi
+
+2025-03-19 15:49:17,462 p=2364060 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: qa
+
+2025-03-19 15:49:17,463 p=2364060 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-03-19 15:49:17,463 p=2364060 u=tallonea n=ansible INFO| playbook: playbooks/activemq.yml
+2025-03-19 15:49:17,573 p=2364104 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:17,573 p=2364104 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:17,579 p=2364104 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:49:17,693 p=2364104 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: svi
+
+2025-03-19 15:49:17,694 p=2364104 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: qa
+
+2025-03-19 15:49:17,694 p=2364104 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-03-19 15:49:17,694 p=2364104 u=tallonea n=ansible INFO| playbook: playbooks/.null-ls_202946_activemq.yml
+2025-03-19 15:49:18,087 p=2364730 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:49:18,256 p=2364781 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:49:32,711 p=2369543 u=tallonea n=ansible INFO| {}
+2025-03-19 15:49:34,028 p=2370482 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:34,029 p=2370482 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:34,035 p=2370482 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:49:34,137 p=2370530 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:34,137 p=2370530 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:34,146 p=2370530 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:49:34,166 p=2370482 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: svi
+
+2025-03-19 15:49:34,166 p=2370482 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: qa
+
+2025-03-19 15:49:34,167 p=2370482 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-03-19 15:49:34,167 p=2370482 u=tallonea n=ansible INFO| playbook: playbooks/activemq.yml
+2025-03-19 15:49:34,299 p=2370530 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: svi
+
+2025-03-19 15:49:34,300 p=2370530 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: qa
+
+2025-03-19 15:49:34,301 p=2370530 u=tallonea n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-03-19 15:49:34,301 p=2370530 u=tallonea n=ansible INFO| playbook: playbooks/.null-ls_239405_activemq.yml
+2025-03-19 15:49:34,947 p=2370576 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:49:35,272 p=2370613 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:49:46,684 p=2374882 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:46,684 p=2374882 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:46,687 p=2374882 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:47,184 p=2374904 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:47,185 p=2374904 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:47,189 p=2374904 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:47,413 p=2374910 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:47,414 p=2374910 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:47,420 p=2374910 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:47,960 p=2375460 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:47,960 p=2375460 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:47,963 p=2375460 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:48,405 p=2375482 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:48,405 p=2375482 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:48,408 p=2375482 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:48,969 p=2375500 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:48,969 p=2375500 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:48,972 p=2375500 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:49,399 p=2376012 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:49,399 p=2376012 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:49,403 p=2376012 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:49,830 p=2376022 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:49,830 p=2376022 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:49,834 p=2376022 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:49:58,963 p=2378172 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:49:58,963 p=2378172 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:49:58,965 p=2378172 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:50:05,063 p=2380347 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:50:05,063 p=2380347 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:50:05,066 p=2380347 u=tallonea n=ansible INFO| @all:
+  |--@ungrouped:
+2025-03-19 15:51:23,204 p=2402447 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse /home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to main inventory as an inventory
+source
+
+2025-03-19 15:51:23,205 p=2402447 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:51:23,208 p=2402447 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-19 15:51:23,232 p=2402447 u=tallonea n=ansible ERROR| ERROR! the role 'activemq_setup' was not found in /home/tallonea/.config/ansible/playbooks/roles:/home/tallonea/.config/ansible/roles                            # Path to roles directory:/home/tallonea/.config/ansible/playbooks
+
+The error appears to be in '/home/tallonea/.config/ansible/playbooks/activemq.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - activemq_setup
+      ^ here
+
+2025-03-19 15:52:05,636 p=2414255 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:06,256 p=2414336 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:52:06,606 p=2414474 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:52:13,398 p=2416804 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:15,020 p=2417318 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:16,484 p=2417668 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:52:18,190 p=2418225 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:18,358 p=2418297 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:52:20,124 p=2418905 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:21,793 p=2418998 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:24,700 p=2420346 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:25,836 p=2420478 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:52:27,779 p=2420932 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:36,585 p=2425025 u=tallonea n=ansible INFO| {}
+2025-03-19 15:52:39,229 p=2425809 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:53:16,189 p=2442762 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:30,282 p=2448663 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:38,076 p=2452539 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:48,370 p=2457880 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:51,795 p=2461244 u=tallonea n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO"
+}
+2025-03-19 15:53:52,503 p=2461853 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:54,165 p=2462416 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:55,693 p=2462443 u=tallonea n=ansible INFO| {}
+2025-03-19 15:53:57,269 p=2462471 u=tallonea n=ansible INFO| {}
+2025-03-19 15:55:20,547 p=2483931 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse
+/home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to
+main inventory as an inventory source
+
+2025-03-19 15:55:20,547 p=2483931 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:55:20,549 p=2483931 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-19 15:55:20,575 p=2483931 u=tallonea n=ansible ERROR| ERROR! the role 'activemq_setup' was not found in /home/tallonea/.config/ansible/playbooks/roles:/home/tallonea/.config/ansible/roles                            # Path to roles directory:/home/tallonea/.config/ansible/playbooks
+
+The error appears to be in '/home/tallonea/.config/ansible/playbooks/activemq.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - activemq_setup
+      ^ here
+
+2025-03-19 15:55:59,625 p=2490455 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:21,770 p=2494557 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:24,817 p=2496046 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:28,019 p=2496685 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:31,597 p=2497778 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:34,600 p=2499240 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:36,289 p=2499654 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:44,350 p=2502000 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:47,544 p=2503061 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:51,497 p=2503740 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:53,388 p=2504101 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:55,281 p=2504745 u=tallonea n=ansible INFO| {}
+2025-03-19 15:56:57,189 p=2505583 u=tallonea n=ansible INFO| {}
+2025-03-19 15:57:11,652 p=2508576 u=tallonea n=ansible WARNING| [WARNING]: Unable to parse /home/tallonea/.config/ansible/inventory/activemq_inventory.yml   # Path to main inventory as an inventory
+source
+
+2025-03-19 15:57:11,652 p=2508576 u=tallonea n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-19 15:57:11,655 p=2508576 u=tallonea n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
