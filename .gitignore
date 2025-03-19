@@ -4,3 +4,4 @@ tmp/
 ""/
 \"\$ANSIBLE_HOME\"/
 .ssh
+ansible.log
