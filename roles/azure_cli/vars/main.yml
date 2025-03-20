@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT-0
+---
+# vars file for roles/azure_cli
+
+azure_resource_group: "MyResourceGroup"
+azure_location: "swedencentral"
+aci_container_name: "nginx-backend-container"
+aci_image: "nginx"
+aci_os_type: "Linux"
+aci_cpu_cores: 1
+aci_memory_gb: 1
+aci_port: 5000

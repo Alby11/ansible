@@ -1,0 +1,7 @@
+---
+# Main entry for azure_aci role
+- name: Validate Azure authentication
+  include_tasks: validate_auth.yml
+
+- name: Deploy Azure Container Instance
+  include_tasks: deploy_aci.yml

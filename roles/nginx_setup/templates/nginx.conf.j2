@@ -1,20 +1,8 @@
-user www-data;
-worker_processes auto;
-pid /run/nginx.pid;
+server {
+    listen 80;
+    server_name {{ ansible_host }};
 
-events {
-    worker_connections 1024;
-}
-
-http {
-    server {
-        listen 80;
-        server_name {{ ansible_host }};
-
-        location / {
-            root /var/www/html;
-            index index.html;
-        }
+    location / {
+        proxy_pass http://{{ aci_result.container.properties.ipAddress.ip }}:5000;
     }
 }
-

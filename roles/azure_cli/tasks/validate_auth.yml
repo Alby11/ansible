@@ -1,0 +1,15 @@
+---
+- name: Check Azure CLI login status
+  command: az account show
+  register: azure_cli_status
+  changed_when: false
+  failed_when: azure_cli_status.rc != 0
+  when: azure_subscription_id is not defined
+
+- name: Validate service principal credentials from Vault
+  ansible.builtin.fail:
+    msg: "Azure credentials missing! Ensure they are stored in Ansible Vault."
+  when: azure_subscription_id is not defined or
+        azure_client_id is not defined or
+        azure_secret is not defined or
+        azure_tenant is not defined

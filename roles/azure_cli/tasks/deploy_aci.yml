@@ -1,0 +1,33 @@
+---
+- name: Create Azure Resource Group
+  azure.azcollection.azure_rm_resourcegroup:
+    name: "{{ azure_resource_group }}"
+    location: "{{ azure_location }}"
+    subscription_id: "{{ azure_subscription_id }}"
+    client_id: "{{ azure_client_id }}"
+    secret: "{{ azure_secret }}"
+    tenant: "{{ azure_tenant }}"
+  register: rg_result
+
+- name: Deploy Azure Container Instance (ACI) Running NGINX
+  azure.azcollection.azure_rm_containerinstance:
+    resource_group: "{{ azure_resource_group }}"
+    name: "{{ aci_container_name }}"
+    location: "{{ azure_location }}"
+    image: "{{ aci_image }}"
+    os_type: "{{ aci_os_type }}"
+    cpu_cores: "{{ aci_cpu_cores }}"
+    memory_in_gb: "{{ aci_memory_gb }}"
+    ports:
+      - protocol: "TCP"
+        port: "{{ aci_port }}"
+    subscription_id: "{{ azure_subscription_id }}"
+    client_id: "{{ azure_client_id }}"
+    secret: "{{ azure_secret }}"
+    tenant: "{{ azure_tenant }}"
+    state: present
+  register: aci_result
+
+- name: Show ACI Public IP
+  ansible.builtin.debug:
+    msg: "ACI Public IP: {{ aci_result.container.properties.ipAddress.ip }}"

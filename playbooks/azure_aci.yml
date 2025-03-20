@@ -1,0 +1,21 @@
+- name: Deploy Azure Container Instance via Ansible
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars:
+    azure_subscription_id: "{{ azure_credentials.azure_subscription_id }}"
+    azure_client_id: "{{ azure_credentials.azure_client_id }}"
+    azure_secret: "{{ azure_credentials.azure_secret }}"
+    azure_tenant: "{{ azure_credentials.azure_tenant }}"
+    azure_resource_group: "MyResourceGroup"
+    azure_location: "swedencentral"
+    aci_container_name: "nginx-backend-container"
+    aci_image: "nginx"
+    aci_os_type: "Linux"
+    aci_cpu_cores: 1
+    aci_memory_gb: 1
+    aci_port: 5000
+
+  roles:
+    - azure_aci
