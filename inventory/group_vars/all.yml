@@ -1,2 +1,2 @@
 # Load encrypted Azure credentials from Vault
-azure_credentials: "{{ lookup('file', 'group_vars/all/azure.yml') | from_yaml }}"
+azure_credentials: "{{ lookup('file', '{{ inventory_dir }}/group_vars/all/azure.yml') | from_yaml }}"
